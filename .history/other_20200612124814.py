@@ -72,4 +72,3 @@ if __name__ == "__main__":
         print("写入字节数：", count)
         # DReadPort() #读串口数据
         # DColsePort(ser)  #关闭串口
- #check check
