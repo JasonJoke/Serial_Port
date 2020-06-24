@@ -159,18 +159,18 @@ if __name__ == "__main__":
     connect_B_1 = [0x3C, 0x07, 0x01, 0x03, 0x01, 0x12, 0x17]
     connect_B_2 = [0x3C, 0x07, 0x01, 0x03, 0x03, 0x11, 0x18]
     usb_switch_check = [0x3A, 0x06, 0x02, 0x03, 0x01, 0x06]  # 3a0602030106
-    power_on = [0x3C, 0x08, 0x01, 0x04, 0x03, 0x01, 0x01, 0x0A]
-    power_off = [0x3C, 0x08, 0x01, 0x04, 0x03, 0x01, 0x00, 0x09]
+    power_on = [0x3C, 0x08, 0x01, 0x04, 0x03, 0x02, 0x01, 0x0B]
+    power_off = [0x3C, 0x08, 0x01, 0x04, 0x03, 0x02, 0x00, 0x0A]
     power_check = [0x3A, 0x06, 0x02, 0x04, 0x01, 0x07]  # 3a0602040107
 
-    portwrite16(port, bps, arg=usb_power_on)
-    sleep(2)
-    portwrite16(port, bps, arg=connect_pc)
-    sleep(2)
-    portwrite16(port, bps, arg=connect_B_1)
-    sleep(2)
-    portwrite16(port, bps, arg=connect_B_2)
-    sleep(5)
+    # portwrite16(port, bps, arg=usb_power_on)
+    # sleep(2)
+    # portwrite16(port, bps, arg=connect_pc)
+    # sleep(2)
+    # portwrite16(port, bps, arg=connect_B_1)
+    # sleep(2)
+    # portwrite16(port, bps, arg=connect_B_2)
+    # sleep(5)
     portpower16(port, bps, arg=power_on)
     sleep(5)
     portpower16(port, bps, arg=power_off)
